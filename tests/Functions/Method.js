@@ -40,3 +40,24 @@ function square(x) {
 }
 console.log("Square of 4 is: " + square(4));
 console.log("--------------------");
+
+
+function greetUser(value, age, isStudent) {
+    if (typeof value === "string") {
+        console.log("Hello, " + value + "!");
+    }
+
+    if (typeof age === "number") {
+        console.log("Your age is: " + age); 
+    }
+
+    let studentStatus = isStudent ? "a student" : "not a student";
+    console.log("You are " + studentStatus);  
+
+    return "Function executed successfully";
+}
+console.log(greetUser("Bob", 25, true));
+console.log("--------------------");
+console.log(greetUser("Charlie", 30, false));
+console.log("--------------------");
+console.log(greetUser("David", 22, true));
