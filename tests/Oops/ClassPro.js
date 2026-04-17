@@ -45,5 +45,7 @@ class Student {
 
     }
 }
-let student1 = new Student("Bob", 20, "A", "B", 101);
+let student1 = new Student("Bob", 20, "A", "B", 101);// Object creation using class
 console.log(student1.displayStudentInfo());
+console.log("--------------------");
+student1.displayStudentInfo(); // Calling method to display student information
