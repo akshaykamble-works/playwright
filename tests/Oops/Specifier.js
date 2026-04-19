@@ -51,3 +51,16 @@ console.log(emp._department);   // ⚠️ (works, but should avoid)
 
 // ❌ Private (not accessible)
 // console.log(emp.#salary);     // ERROR
+
+/*
+In this example, we have an `Employee` class with a private field `#salary`, a public property `name`, and a protected property `_department`. The `getDetails` method is public and can access the private method `#showSalary`. The `Tester` class extends `Employee` and can access the public and protected members but cannot access the private field directly. This demonstrates how access specifiers work in JavaScript using conventions and private fields. 
+⚡ Key Differences (Important for Interviews)
+Feature	Java 🟢	JavaScript 🟡
+Public	✅ Yes	✅ Default
+Private	✅ Yes	✅ # syntax
+Protected	✅ Yes	❌ Not real (use _)
+Default	✅ Yes	❌ Not available
+Enforcement	✅ Strict (compile-time)	⚠️ Partial (runtime)
+OOP Strength	💪 Strong	⚠️ Flexible
+
+*/
