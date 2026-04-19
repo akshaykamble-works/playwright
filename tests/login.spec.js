@@ -10,7 +10,7 @@ const { chromium } = require('playwright');
   await page.goto('https://www.facebook.com/');
 
   // Enter email
-  await page.fill('#email', 'your_email_here');
+  await page.fill('#email', 'VelocityTesting@gmail.com');
 
   // Enter password
   await page.fill('#pass', 'your_password_here');
