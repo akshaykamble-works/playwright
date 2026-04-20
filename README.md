@@ -168,15 +168,13 @@ jobs:
 </ul>
 
 <hr>
-
-<h2>📈 GitHub Contribution Graph</h2>
+<h2 align="center">📈 GitHub Contribution Graph</h2>
 
 <p align="center">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=akshaykamble-works&theme=tokyo-night&hide_border=true" />
+  <img 
+    src="https://github-readme-activity-graph.vercel.app/graph?username=akshaykamble-works&theme=tokyo-night&area=true&hide_border=true&bg_color=0d1117&color=58a6ff&line=38bdae&point=ffffff" 
+  />
 </p>
-
-<hr>
-
 <h2>👨‍💻 Author</h2>
 
 <p>
