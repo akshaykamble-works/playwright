@@ -1,17 +1,21 @@
 import { test, expect } from '@playwright/test';
 
-test('Verify user can login to sauce login page', async ({ page }) => {
+test('Verify CSS selector locators in Playwright', async ({ page }) => {
 
-    await page.goto('https://www.saucedemo.com/');
-    await expect(page).toHaveTitle('Swag Labs');
+    await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
 
-    await page.fill('#user-name', 'standard_user');
-    await page.fill('#password', 'secret_sauce');
-    await page.click('#login-button');
+    // Wait for username field (important for this app)
+    await page.waitForSelector('input[name="username"]');
 
-     await expect(page).toHaveURL('https://www.saucedemo.com/inventory.html');
-await page.click('(//button[@class="btn btn_primary btn_small btn_inventory "])[1]');
+    // CSS Selectors
+    const usernameInput = page.locator('input[name="username"]');
+    await usernameInput.fill('Admin');
 
+    const passwordInput = page.locator('input[name="password"]');
+    await passwordInput.fill('admin123');
 
+    // Click login button
+    await page.locator('button[type="submit"]').click();
 
-    });
+    
+});
